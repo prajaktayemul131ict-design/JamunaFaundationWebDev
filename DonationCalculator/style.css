@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightblue;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 380px;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.display-container {
+    margin-bottom: 20px;
+    background-color: #e0f2f1;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+}
+
+.display {
+    text-align: right;
+    font-size: 1.2em;
+    padding: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.keys {
+    /* CSS Grid implementation for button alignment */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px;
+}
+
+.key {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+/* Specific Button Styles */
+.amount-btn {
+    background-color: #4db6ac;
+    color: white;
+}
+
+.amount-btn:hover {
+    background-color: #26a69a;
+}
+
+.impact-btn {
+    background-color: #81c784;
+    color: white;
+}
+
+.impact-btn:hover {
+    background-color: #66bb6a;
+}
+
+.input-btn {
+    background-color: #ffb74d;
+    color: #333;
+}
+
+.input-btn:hover {
+    background-color: #ffa726;
+}
+
+.clear-btn {
+    background-color: #e57373;
+    color: white;
+    grid-column: span 4; /* Makes the clear button span all 4 columns */
+}
+
+.clear-btn:hover {
+    background-color: #ef5350;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #777;
+    text-align: center;
+}

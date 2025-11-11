@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Donation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>🌳 Donation Calculator</h1>
+        <div class="display-container">
+            <div id="display-amount" class="display">Amount: $0.00</div>
+            <div id="display-impact" class="display">Impact: 0 Trees</div>
+        </div>
+
+        <div class="keys">
+            <button class="key amount-btn" data-value="10">$10</button>
+            <button class="key amount-btn" data-value="25">$25</button>
+            <button class="key amount-btn" data-value="50">$50</button>
+            <button class="key amount-btn" data-value="100">$100</button>
+            
+            <button class="key input-btn" data-action="input">Enter Amount</button>
+
+            <button class="key impact-btn" data-impact="5">5 Trees</button>
+            <button class="key impact-btn" data-impact="10">10 Trees</button>
+            <button class="key impact-btn" data-impact="20">20 Trees</button>
+            
+            <button class="key clear-btn" data-action="clear">Clear</button>
+        </div>
+        
+        <p class="note">*Each tree planted costs $5.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
